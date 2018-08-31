@@ -14,27 +14,25 @@ class AssetTable extends React.Component {
       <Table>
         <TableHead>
           <TableRow>
-            <TableCell>Dessert (100g serving)</TableCell>
-            <TableCell numeric>Calories</TableCell>
-            <TableCell numeric>Fat (g)</TableCell>
-            <TableCell numeric>Carbs (g)</TableCell>
-            <TableCell numeric>Protein (g)</TableCell>
+            <TableCell>Asset</TableCell>
+            <TableCell numeric>Current Allocation</TableCell>
+            <TableCell numeric>Qty.</TableCell>
+            <TableCell numeric>Target Allocation</TableCell>
+            <TableCell numeric>Amount to Buy</TableCell>
+            <TableCell numeric>New Total</TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
-          {rows.map(row => {
-            return (
-              <TableRow key={row.id}>
-                <TableCell component="th" scope="row">
-                  {row.name}
-                </TableCell>
-                <TableCell numeric>{row.calories}</TableCell>
-                <TableCell numeric>{row.fat}</TableCell>
-                <TableCell numeric>{row.carbs}</TableCell>
-                <TableCell numeric>{row.protein}</TableCell>
-              </TableRow>
-            );
-          })}
+          <TableRow key={1}>
+            <TableCell component="th" scope="row">
+              Name
+            </TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+          </TableRow>
         </TableBody>
       </Table>
     );
