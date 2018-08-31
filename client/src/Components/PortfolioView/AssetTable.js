@@ -4,10 +4,26 @@ import TableBody from "@material-ui/core/TableBody";
 import TableCell from "@material-ui/core/TableCell";
 import TableHead from "@material-ui/core/TableHead";
 import TableRow from "@material-ui/core/TableRow";
+import TableFooter from "@material-ui/core/TableFooter";
 
 class AssetTable extends React.Component {
   constructor(props) {
     super(props);
+
+    this.model = {
+        columns: {
+            asset: {
+
+            },
+            currentAllocation: {
+
+            },
+            quantity: {
+
+            },
+            
+        }
+    }
   }
   render() {
     return (
@@ -34,6 +50,18 @@ class AssetTable extends React.Component {
             <TableCell numeric>10</TableCell>
           </TableRow>
         </TableBody>
+        <TableFooter>
+        <TableRow>
+            <TableCell component="th" scope="row">
+              Total
+            </TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+            <TableCell numeric>10</TableCell>
+          </TableRow>
+        </TableFooter>
       </Table>
     );
   }
